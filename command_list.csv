@@ -1,0 +1,16 @@
+  111  git branch develop                                                                
+  112  cd "/Users/busebayan/Desktop/QA Project/HW_10"
+  113  git branch develop\ngit checkout develop
+  114  touch develop_ test.txt
+  115  git add .
+  116  git commit -m "Add develop_test.txt to develop branch"
+  117  echo "This is a test line for the develop branch." > develop_test.txt
+  118  git status
+  119  git add .
+  120  git commit -m "Update develop_test.txt with content"
+  121  git checkout main
+  122  git merge develop
+  123  git log --online --graph --all
+  124  git checkout main
+  125  git merge develop
+  126  git log --oneline --graph --all
